@@ -18,5 +18,16 @@ public class Main {
         System.out.println("MyIntValue = " + myIntValue);
         System.out.println("MyFloatValue = " + myFloatValue);
         System.out.println("MyDoubleValue = " + myDoubleValue);
+
+        /**
+         * Convert a given number of pounds to kilograms
+         */
+        //start
+        double pounds = 200d;
+        double convertPoundsToKg = pounds * 0.45359237d;
+        System.out.println("Converted to Kg = " + convertPoundsToKg);
+        //End
+
+
     }
 }
