@@ -10,6 +10,9 @@ public class Challenge {
         double S4Result = S3Result % 40.00d;
         System.out.println("theRemainder = " + S4Result);
 
+        /**
+         * replace ->
+         */
 //        boolean S5Result;
 //        if (S4Result == 0){
 //            System.out.println("True");
@@ -19,6 +22,11 @@ public class Challenge {
 //            System.out.println("False");
 //            return S5Result = false;
 //        }
+        /**
+         * replace END
+         */
+
+        //Replacing using Ternary Operator (Preferred)
         boolean S5Result = (S4Result == 0) ? true : false;
         System.out.println("isNoRemainder = " + S5Result);
 
