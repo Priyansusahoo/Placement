@@ -77,5 +77,12 @@ public class Main {
         if (wasCar) {
             System.out.println("wasCar is true");
         }
+
+        /**
+         * Ternary Operators with example
+         */
+        int a = 10,b = 20;
+        int max = (a>b) ? a : b;
+        System.out.println("Max Value is " + max);
     }
 }
