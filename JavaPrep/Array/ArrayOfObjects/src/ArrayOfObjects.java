@@ -15,6 +15,7 @@ public class ArrayOfObjects {
         students[1] = s2;
         students[2] = s3;
 
+        //Student s pickup all the elements from student
         for(Student s : students){
             System.out.println(s);
         }
