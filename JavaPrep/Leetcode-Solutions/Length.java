@@ -5,7 +5,7 @@ public class Length {
         int i = 0;
 
         try {
-            while (arr[i] != 0) {
+            while (arr[i] != 'a') {
                 count++;
                 i++;
             }
