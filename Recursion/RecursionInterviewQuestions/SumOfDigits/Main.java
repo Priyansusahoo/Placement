@@ -6,10 +6,15 @@ class Main{
 	}
 
 	public int sumOfDigits(int n){
-		if (n < 0){
-			return -1;
-		}
-		if (n == 0){
+		//if (n < 0){
+		//	return -1;
+		//}
+
+		/**
+		 * (n<0) condition in the next if-statement to reduce
+		 * the loops
+		 */
+		if (n == 0 || n < 0){
 			return 0;
 		}
 		return n % 10 + sumOfDigits(n/10);
