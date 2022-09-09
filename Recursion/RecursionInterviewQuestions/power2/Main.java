@@ -1,7 +1,7 @@
 class Main{
 	public static void main(String[] args){
 		Main recursion = new Main();
-		var powerIs = recursion.power(2, 2);
+		var powerIs = recursion.power(2, 1);
 		System.out.println("power = " + powerIs);
 	}
 
@@ -12,9 +12,9 @@ class Main{
 		if(expo == 0){
 			return 1;
 		}
-		if(expo == 1){
-			return base;
-		}
+		//if(expo == 1){
+		//	return base;
+		//}
 		return base * power(base, expo -1);
 	}
 }
