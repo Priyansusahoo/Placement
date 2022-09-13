@@ -5,22 +5,22 @@ class Main{
 		main.spOfArray(customArray);
 	}
 	public void spOfArray(int[] array){
-		int sum = 0;
-		int product = 1;
+		int sum = 0;//O(1)
+		int product = 1;//O(1)
 		/**
 		 * for-loop for sum of array
 		 */
-		for (int i = 0; i < array.length;i++){
-			sum += array[i];
+		for (int i = 0; i < array.length;i++){ //O(n)
+			sum += array[i];//O(1)
 		}
 		/**
 		 * for-loop for product of array
 		 */
-		for (int i = 0; i < array.length;i++){
-			product *= array[i];
+		for (int i = 0; i < array.length;i++){ //O(n)
+			product *= array[i];//O(1)
 		}
 		System.out.println("sum is " + 
-				sum + ", product is " + product);
+				sum + ", product is " + product); //O(1)
 	}
-	//Time Complexity = O(n)
+	//Time Complexity = O(1)+O(1)+O(n)+O(1)+O(n)+O(1)+O(1) = O(2n) = O(n)
 }
