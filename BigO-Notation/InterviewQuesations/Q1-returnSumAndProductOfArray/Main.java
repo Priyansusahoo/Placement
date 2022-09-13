@@ -22,4 +22,5 @@ class Main{
 		System.out.println("sum is " + 
 				sum + ", product is " + product);
 	}
+	//Time Complexity = O(n)
 }
