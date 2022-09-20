@@ -8,7 +8,7 @@ public class Sixth {
         input.close();
 
         float USD = (float) (rupees / 79.67);
-        System.out.println(String.format("%.02f", USD)
+        System.out.println(String.format("%.03f", USD)
                 + " USD");
     }
 }
