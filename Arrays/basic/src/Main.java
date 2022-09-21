@@ -8,11 +8,15 @@ public class Main {
             System.out.print(arr4[i] + " ");
         }
         System.out.println("\n");
-
-        for (int i = 0; i < arr4.length; i++) {
-            System.out.println("Element " + i + "position value is " + arr4[i]);
-        }
+        //called the function and passed the parameter(arr4)
+        printArray(arr4);
     }
+        //created a funtion to print the position and its element
+        public static void printArray(int[] array) {
+            for (int i = 0; i < array.length; i++) {
+                System.out.println("Element " + i + "position value is " + array[i]);
+            }
+        }
 }
 
 
