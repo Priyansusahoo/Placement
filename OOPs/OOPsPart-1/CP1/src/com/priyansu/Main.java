@@ -8,7 +8,7 @@ public class Main {
         /**
          * "InputString" -> parameter String(model)  in getter() for model
          */
-        porsche.setModel("holdn");
+        porsche.setModel("HondaCity");
         /**
          * It prints by accessing getModel() through object porsche
          */

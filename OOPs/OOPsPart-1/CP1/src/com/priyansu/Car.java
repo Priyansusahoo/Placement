@@ -10,8 +10,8 @@ public class Car {
     //Setter() for model
     public void setModel(String model){
         String validateString = model.toLowerCase();
-        if (validateString.equals("porsche")
-                || validateString.equals("holden")){
+        if (validateString.equals("carrera")
+                || validateString.equals("commodore")){
             this.model = model;
         }
         else{
