@@ -11,7 +11,7 @@ class KadenAlgorithm {
     }
 
     public int maxSumSequence(int[] array) {
-        int maxSum = 0;
+        int maxSum = Integer.MIN_VALUE;
         int curSum = 0;
 
         for (int i = 0; i < array.length; i++) {
