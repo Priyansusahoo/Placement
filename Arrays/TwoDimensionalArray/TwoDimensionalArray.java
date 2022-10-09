@@ -76,9 +76,24 @@ public class TwoDimensionalArray {
             }
         }
         System.out.println("Value not found");// O(1)
+        /**
+         * Time-Compexity:- O(mn)
+         * Space-Complexity:- O(1) -> No extra memory needed.
+         */
     }
-    /**
-     * Time-Compexity:- O(mn)
-     * Space-Complexity:- O(1) -> No extra memory needed.
-     */
+
+    // delete element from 2D Array
+    public void delete(int row, int col) {
+        try {
+            System.out.println("\nSuccessfully Deleted " + arr[row][col]); // O(1)
+            arr[row][col] = Integer.MIN_VALUE; // O(1) and 2^31 -> Integer.MIN_VALUE.
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Invalid Index provided");// O(1)
+        }
+        /**
+         * Time-Complexity: O(1)
+         * Space-Complexity: O(1) -> extra memory is not required to
+         * perform this delete().
+         */
+    }
 }

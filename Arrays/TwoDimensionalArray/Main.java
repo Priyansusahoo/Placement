@@ -11,9 +11,11 @@ public class Main {
         tda.insertValueInTheArray(1, 0, 30);
         tda.insertValueInTheArray(2, 0, 40);
         // tda.insertValueInTheArray(0, 0, 40);
-        // System.out.print(Arrays.deepToString(tda.arr));
+        System.out.print(Arrays.deepToString(tda.arr));
         // tda.accessCell(0, 2);
-        tda.traverse2DArray();
-        tda.search(20);
+        // tda.traverse2DArray();
+        // tda.search(20);
+        tda.delete(0, 0);
+        System.out.print(Arrays.deepToString(tda.arr));
     }
 }
