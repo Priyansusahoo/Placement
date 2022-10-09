@@ -31,11 +31,15 @@ public class TwoDimensionalArray {
 
     // Accessing cell value from the given array
     public void accessCell(int row, int col) {
-        System.out.println("\nAccessing Row " + row + ", Col " + col);
+        System.out.println("\nAccessing Row " + row + ", Col " + col); // O(1)
         try {
-            System.out.println("Cell value is " + arr[row][col]);
+            System.out.println("Cell value is " + arr[row][col]); // O(1)
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Invalid Index");
+            System.out.println("Invalid Index");// O(1)
         }
+        /**
+         * Time-Complexity: O(1)
+         * Space-Complexity:- O(1)
+         */
     }
 }
