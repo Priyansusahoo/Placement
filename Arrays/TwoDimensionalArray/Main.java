@@ -14,5 +14,6 @@ public class Main {
         // System.out.print(Arrays.deepToString(tda.arr));
         // tda.accessCell(0, 2);
         tda.traverse2DArray();
+        tda.search(20);
     }
 }
