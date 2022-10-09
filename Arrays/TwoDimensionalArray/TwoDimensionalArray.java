@@ -14,14 +14,18 @@ public class TwoDimensionalArray {
     // Insertion value in the array
     public void insertValueInTheArray(int row, int col, int value) {
         try {
-            if (arr[row][col] == Integer.MIN_VALUE) {
-                arr[row][col] = value;
-                System.out.println("Successfully inserted");
+            if (arr[row][col] == Integer.MIN_VALUE) { // O(1)
+                arr[row][col] = value; // O(1)
+                System.out.println("Successfully inserted");// O(1)
             } else {
-                System.out.println("cell is already occupied");
+                System.out.println("Cell is already occupied");// O(1)
             }
         } catch (IndexOutOfBoundsException e) {
-            System.out.println("Invalid index for 2D Array");
+            System.out.println("Invalid index for 2D Array");// O(1)
         }
     }
 }
+/**
+ * Time-Complexity:- O(1)
+ * Space-Complexity:- O(1)
+ */
