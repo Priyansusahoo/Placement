@@ -23,9 +23,19 @@ public class TwoDimensionalArray {
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Invalid index for 2D Array");// O(1)
         }
+        /**
+         * Time-Complexity:- O(1)
+         * Space-Complexity:- O(1)
+         */
+    }
+
+    // Accessing cell value from the given array
+    public void accessCell(int row, int col) {
+        System.out.println("\nAccessing Row " + row + ", Col " + col);
+        try {
+            System.out.println("Cell value is " + arr[row][col]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Invalid Index");
+        }
     }
 }
-/**
- * Time-Complexity:- O(1)
- * Space-Complexity:- O(1)
- */

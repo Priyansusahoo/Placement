@@ -9,5 +9,6 @@ public class Main {
         tda.insertValueInTheArray(0, 0, 10);
         // tda.insertValueInTheArray(0, 0, 40);
         System.out.print(Arrays.deepToString(tda.arr));
+        tda.accessCell(0, 2);
     }
 }
