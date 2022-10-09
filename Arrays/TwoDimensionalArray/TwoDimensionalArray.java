@@ -65,16 +65,20 @@ public class TwoDimensionalArray {
 
     // Searching a single value from 2D Array
     public void search(int value) {
-        for (int row = 0; row < arr.length; row++) {
-            for (int col = 0; col < arr[row].length; col++) {
-                if (arr[row][col] == value) {
+        for (int row = 0; row < arr.length; row++) { // O(m)
+            for (int col = 0; col < arr[row].length; col++) {// O(n)
+                if (arr[row][col] == value) {// O(1)
                     System.out.println(value
                             + " exists in the array in Row#"
-                            + row + " and Col#" + col);
+                            + row + " and Col#" + col);// O(1)
                     return;
                 }
             }
         }
-        System.out.println("Value not found");
+        System.out.println("Value not found");// O(1)
     }
+    /**
+     * Time-Compexity:- O(mn)
+     * Space-Complexity:- O(1) -> No extra memory needed.
+     */
 }
