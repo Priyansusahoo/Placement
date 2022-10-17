@@ -3,12 +3,14 @@
  */
 abstract class Programming {
     public abstract void Developer();
+
+    public abstract void Rank();
 }
 
 /**
  * HTML
  */
-class HTML extends Programming {
+abstract class HTML extends Programming {
     @Override
     public void Developer() {
         System.out.println("Developer is Tim");
@@ -17,11 +19,12 @@ class HTML extends Programming {
 
 /**
  * Java
+ * all control in Java class.
  */
-class Java extends Programming {
+class Java extends HTML {
     @Override
-    public void Developer() {
-        System.out.println("Developer is James");
+    public void Rank() {
+        System.out.println("Rank is 2nd");
     }
 }
 
@@ -30,9 +33,8 @@ class Java extends Programming {
  */
 class Main {
     public static void main(String[] args) {
-        Programming h = new HTML();
-        h.Developer();
         Programming j = new Java();
         j.Developer();
+        j.Rank();
     }
 }
