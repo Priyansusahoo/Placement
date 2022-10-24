@@ -56,5 +56,24 @@ public class SinglyLinkedList {
          * we will only insert one node that is why SC->O(1).
          */
     }
+    public void traverseSinglyLinkedList(){
+        if(head == null){ // O(1)
+            System.out.println("SLL doesn't exists");
+        } else{
+            Node tempNode = head; // O(1)
+            for (int i = 0; i < size; i++) { // O(N)
+                System.out.print(tempNode.value); // O(1)
+                if (i != size - 1){ //O(1)
+                    System.out.print(" -> ");
+                }
+                tempNode = tempNode.next; // O(1)
+            }
+        }
+        System.out.println("\n"); // O(1)
+        /**
+         * Time-Complexity: O(N)
+         * Space-Complexity: O(1)
+         */
+    }
 }
 
