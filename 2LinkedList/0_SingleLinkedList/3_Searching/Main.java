@@ -16,5 +16,7 @@ class Main {
 //        System.out.println(sLL.head.value);
 //        System.out.println(sLL.head.next.value);
         sLL.traverseSinglyLinkedList();
+        sLL.searchNode(7);
+        sLL.searchNode(10);
     }
 }
