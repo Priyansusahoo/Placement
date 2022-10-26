@@ -143,5 +143,13 @@ SinglyLinkedList {
          * Space-Complexity: O(1)
          */
     }
+    //delete Singly Linked List
+    public void deleteSLL(){
+        head = null;
+        tail = null;
+        /**
+         * TC: O(1)
+         */
+    }
 }
 

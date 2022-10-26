@@ -24,5 +24,7 @@ class Main {
         //deletion
         sLL.deletionOfNode(3);
         sLL.traverseSinglyLinkedList();
+        sLL.deleteSLL();
+        sLL.traverseSinglyLinkedList();
     }
 }
