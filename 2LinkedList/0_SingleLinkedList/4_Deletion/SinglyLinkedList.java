@@ -144,9 +144,10 @@ SinglyLinkedList {
          */
     }
     //delete Singly Linked List
-    public void deleteSLL(){
+    public void deleteSLL(){ // ----------------->O(1)
         head = null;
         tail = null;
+        System.out.println("linked list deleted successfully");
         /**
          * TC: O(1)
          */
