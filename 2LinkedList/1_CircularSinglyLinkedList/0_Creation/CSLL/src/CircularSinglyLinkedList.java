@@ -49,4 +49,27 @@ public class CircularSinglyLinkedList {
          * Space-Complexity: O(1)
          */
     }
+    /**
+     * traversal
+     */
+    public void traverseCSLL(){
+        System.out.println();
+        if (head != null){ // -----------------------------------> O(1)
+            Node tempNode = head;
+            for (int i = 0; i < size; i++) { // -----------------> O(N)
+                System.out.print(tempNode.value);
+                if (i != size - 1){ // --------------------------> O(1)
+                    System.out.print(" -> ");
+                }
+                tempNode = tempNode.next; // --------------------> O(1)
+            }
+            System.out.println();
+        } else {
+            System.out.println("\nCSLL does not exist"); // -----> O(1)
+        }
+        /**
+         * Time-Complexity: O(N)
+         * Space-Complexity: O(1)
+         */
+    }
 }

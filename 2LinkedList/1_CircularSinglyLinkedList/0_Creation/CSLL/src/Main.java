@@ -5,11 +5,9 @@ public class Main {
         cSLL.insertCSLL(4,0);
         cSLL.insertCSLL(3,1);
         cSLL.insertCSLL(7,8);
-        System.out.println(cSLL.head.value);
-        System.out.println(cSLL.head.next.next.value);
-        /**
-         * Time-Complexity: O(1)
-         * Space-Comlpexity: O(1)
-         */
+//        System.out.println(cSLL.head.value);
+//        System.out.println(cSLL.head.next.next.value);
+        //traverse
+        cSLL.traverseCSLL();
     }
 }
