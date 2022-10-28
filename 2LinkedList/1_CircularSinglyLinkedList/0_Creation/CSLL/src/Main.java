@@ -9,5 +9,6 @@ public class Main {
 //        System.out.println(cSLL.head.next.next.value);
         //traverse
         cSLL.traverseCSLL();
+        cSLL.searchingNode(7);
     }
 }
