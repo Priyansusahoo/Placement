@@ -131,4 +131,21 @@ public class CircularSinglyLinkedList {
          * Space-Complexity: O(1)
          */
     }
+    /**
+     * deleteCSLL
+     */
+    public void deleteCSLL(){
+        if (head == null){
+            System.out.println("CSLL doesn't exist");
+        } else {
+            head = null;
+            tail.next = null;
+            tail = null;
+            System.out.println("Successfully deleted CSLL");
+        }
+        /**
+         * Time-Complexity: O(1)
+         * Space-Complexity: O(1)
+         */
+    }
 }

@@ -10,7 +10,8 @@ public class Main {
         //traverse
         cSLL.traverseCSLL();
 //        cSLL.searchingNode(7);
-        cSLL.deleteNode(8);
+//        cSLL.deleteNode(8);
+        cSLL.deleteCSLL();
         cSLL.traverseCSLL();
     }
 }
