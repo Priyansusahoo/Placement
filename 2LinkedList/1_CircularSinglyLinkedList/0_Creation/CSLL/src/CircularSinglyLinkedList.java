@@ -95,22 +95,22 @@ public class CircularSinglyLinkedList {
      */
     public void deleteNode(int location){
         System.out.println();
-        if (head == null){
+        if (head == null){ // ---------------------------------------> O(1)
             System.out.println("CSLL doesn't exist");
-        } else if (location == 0) {
+        } else if (location == 0) { // ------------------------------> O(1)
             head = head.next;
             tail.next = head;
             size --;
-            if (size == 0){
+            if (size == 0){ // --------------------------------------> O(1)
                 tail = null;
                 head.next = null;
                 head = null;
             }
         } else if (location >= size) {
-            Node tempNode = head;
-            for (int i = 0; i < size - 1; i++) {
+            Node tempNode = head; // ---------------------------------> O(1)
+            for (int i = 0; i < size - 1; i++) { // ------------------> O(N)
                 tempNode = tempNode.next;
-            } if (tempNode == head){
+            } if (tempNode == head){ // ------------------------------> O(1)
                 head.next = null;
                 tail = head = null;
                 size --;
@@ -119,12 +119,16 @@ public class CircularSinglyLinkedList {
             tail = tempNode;
             size --;
         } else {
-            Node tempNode = head;
-            for (int i = 0; i < location - 1; i++) {
+            Node tempNode = head; // ---------------------------------> O(1)
+            for (int i = 0; i < location - 1; i++) { // --------------> O(N)
                 tempNode = tempNode.next;
             }
             tempNode.next = tempNode.next.next;
             size --;
         }
+        /**
+         * Time-Complexity: O(N)
+         * Space-Complexity: O(1)
+         */
     }
 }
