@@ -103,4 +103,25 @@ public class DoublyLinkedList {
          * Space-Complexity: O(1)
          */
     }
+    /**
+     * searchNode
+     */
+    public boolean searchNode(int nodeValue){
+        if (head != null){ // ---------------> O(1)
+            DoublyNode tempNode = head;
+            for (int i = 0; i < size; i++) { // -----------------> O(N)
+                if (tempNode.value == nodeValue){ // ------------> O(1)
+                    System.out.println("Node with value "+ nodeValue +" found at " + i);
+                    return true;
+                }
+                tempNode = tempNode.next;
+            }
+        }
+        System.out.println("Node with value "+ nodeValue +" not found");
+        return false;
+        /**
+         * Time-Complexity: O(N)
+         * Space-Complexity: O(1)
+         */
+    }
 }

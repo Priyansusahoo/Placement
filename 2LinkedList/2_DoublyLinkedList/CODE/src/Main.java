@@ -10,7 +10,12 @@ public class Main {
 //        System.out.println(dll.head.next.next.next.value);
 //        System.out.println(dll.tail.value); // 3
 //        System.out.println(dll.head.value);
+        System.out.println("traverse");
         dll.traverse();
+        System.out.println("reverseTraverse");
         dll.reverseTraverse();
+        System.out.println("searching Node");
+        dll.searchNode(3);
+        dll.searchNode(9);
     }
 }
