@@ -11,5 +11,6 @@ public class Main {
 //        System.out.println(dll.tail.value); // 3
 //        System.out.println(dll.head.value);
         dll.traverse();
+        dll.reverseTraverse();
     }
 }

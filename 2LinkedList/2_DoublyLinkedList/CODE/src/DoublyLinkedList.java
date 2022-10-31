@@ -81,4 +81,26 @@ public class DoublyLinkedList {
          * Space-Complexity: O(1)
          */
     }
+    /**
+     * reverse-traverse
+     */
+    public void reverseTraverse(){
+        if (head != null){
+            DoublyNode tempNode = tail;
+            for (int i = 0; i < size; i++) {
+                System.out.print(tempNode.value);
+                if (i != size - 1){
+                    System.out.print(" <- ");
+                }
+                tempNode = tempNode.prev;
+            }
+        } else {
+            System.out.println("DLL doesn't exist");
+        }
+        System.out.println();
+        /**
+         * Time-Complexity: O(N)
+         * Space-Complexity: O(1)
+         */
+    }
 }
