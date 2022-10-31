@@ -59,4 +59,26 @@ public class DoublyLinkedList {
          * Space-Complexity: O(1)
          */
     }
+    /**
+     * traverse
+     */
+    public void traverse(){
+        if (head != null){ // ------------------> O(1)
+            DoublyNode tempNode = head;
+            for (int i = 0; i < size; i++) { // ---------------> O(N)
+                System.out.print(tempNode.value);
+                if (i != size - 1){ // -----------------------> O(1)
+                    System.out.print(" -> ");
+                }
+                tempNode = tempNode.next; //O(1)
+            }
+        } else { // ----------------------> O(1)
+            System.out.println("DLL doesn't exist");
+        }
+        System.out.println();
+        /**
+         * Time-Complexity: O(N)
+         * Space-Complexity: O(1)
+         */
+    }
 }
