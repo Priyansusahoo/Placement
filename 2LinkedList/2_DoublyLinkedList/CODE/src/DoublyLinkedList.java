@@ -75,7 +75,7 @@ public class DoublyLinkedList {
         } else { // ----------------------> O(1)
             System.out.println("DLL doesn't exist");
         }
-        System.out.println();
+        System.out.println("\n");
         /**
          * Time-Complexity: O(N)
          * Space-Complexity: O(1)
@@ -97,7 +97,7 @@ public class DoublyLinkedList {
         } else {
             System.out.println("DLL doesn't exist");
         }
-        System.out.println();
+        System.out.println("\n");
         /**
          * Time-Complexity: O(N)
          * Space-Complexity: O(1)
