@@ -19,4 +19,43 @@ public class CircularDoublyLinkedList {
          * Space-Complexity: O(1)
          */
     }
+    /**
+     * insertNode
+     */
+    public void insertNode(int nodeValue, int location){
+        DoublyNode newNode = new DoublyNode();
+        newNode.value = nodeValue;
+        if (head == null){ // O(1)
+            createCDLL(nodeValue);
+            return;
+        } else if (location == 0) { // O(1)
+            newNode.next = head;
+            newNode.prev = tail;
+            head.prev = newNode;
+            tail.next = newNode;
+            head = newNode;
+        } else if (location >= size) { // O(1)
+            newNode.next = head;
+            newNode.prev = tail;
+            head.prev = newNode;
+            tail.next = newNode;
+            tail = newNode;
+        } else {
+            DoublyNode tempNode = head;
+            int index = 0;
+            while (index < location - 1){ // -----------> O(N)
+                tempNode = tempNode.next;
+                index ++;
+            }
+            newNode.prev = tempNode;
+            newNode.next = tempNode.next;
+            tempNode.next = newNode;
+            newNode.next.prev = newNode;
+        }
+        size ++;
+        /**
+         * Time-Complexity: O(N)
+         * Space-Complexity: O(1)
+         */
+    }
 }
