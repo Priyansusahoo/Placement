@@ -157,12 +157,34 @@ public class DoublyLinkedList {
             }
         } else { // at mentioned location
             DoublyNode tempNode = head;
-            for (int i = 0; i < location - 1; i++) { // loop to find "location - 1"
+            for (int i = 0; i < location - 1; i++) { // loop to find "location - 1" // O(N)
                 tempNode = tempNode.next;
             }
             tempNode.next = tempNode.next.next;
             tempNode.next.prev = tempNode;
             size --;
         }
+        /**
+         * Time-Complxeity: O(N)
+         * Space-Complexity: O(1)
+         */
     }
+    /**
+     * deleteDLL
+     */
+    public void deleteDLL(){
+        DoublyNode tempNode = head;
+        for (int i = 0; i < size; i++) { // O(N)
+            tempNode.prev = null;
+            tempNode = tempNode.next;
+        }
+        head = null;
+        tail = null;
+        System.out.println("Successfully deleted");
+        System.out.println();
+    }
+    /**
+     * Time-Complexity: O(N)
+     * Space-Complexity: O(1)
+     */
 }

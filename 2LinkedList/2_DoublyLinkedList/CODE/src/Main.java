@@ -18,5 +18,9 @@ public class Main {
         dll.deleteNode(2);
         System.out.println("traverse after deleting node:");
         dll.traverse();
+        System.out.println("Deleting entire DLL");
+        dll.deleteDLL();
+        System.out.println("After deleting DLL-> traverse");
+        dll.traverse();
     }
 }
