@@ -102,4 +102,26 @@ public class CircularDoublyLinkedList {
          * Space-Complexity: O(1)
          */
     }
+    /**
+     * search for Node
+     */
+    public boolean searchNode(int nodeValue){
+        if (head != null){
+            DoublyNode tempNode = head;
+            for (int i = 0; i < size; i++) {
+                if (tempNode.value == nodeValue){
+                    System.out.println("Node with value "
+                            + nodeValue
+                            + " found at location "
+                            + i);
+                    return true;
+                }
+                tempNode = tempNode.next;
+            }
+        }
+        System.out.println("node with value "
+                + nodeValue
+                + " not found");
+        return false;
+    }
 }

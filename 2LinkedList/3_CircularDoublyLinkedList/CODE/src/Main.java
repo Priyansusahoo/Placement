@@ -8,6 +8,9 @@ public class Main {
         cdll.insertNode(8,3);
         System.out.println("traverse:");
         cdll.traverse();
+        System.out.println("search node:");
+        cdll.searchNode(3); // exist
+        cdll.searchNode(9);
         System.out.println("reverse Traverse:");
         cdll.reverseTraverse();
     }
