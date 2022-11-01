@@ -58,4 +58,27 @@ public class CircularDoublyLinkedList {
          * Space-Complexity: O(1)
          */
     }
+    /**
+     * traverse
+     */
+    public void traverse(){
+        System.out.println();
+        if(head != null){
+            DoublyNode tempNode = head;
+            for (int i = 0; i < size; i++) { // -------> O(N)
+                System.out.print(tempNode.value);
+                if (i != size - 1){
+                    System.out.print(" -> ");
+                }
+                tempNode = tempNode.next;
+            }
+        } else {
+            System.out.println("CDLL doesn't exist");
+        }
+        System.out.println();
+        /**
+         * Time-Complexity: O(N)
+         * Space-Complexity: O(1)
+         */
+    }
 }
