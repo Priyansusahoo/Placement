@@ -81,4 +81,25 @@ public class CircularDoublyLinkedList {
          * Space-Complexity: O(1)
          */
     }
+    /**
+     * reverseTraverse
+     */
+    public void reverseTraverse(){
+        if (head != null){
+            DoublyNode tempNode = tail;
+            for (int i = 0; i < size; i++) { // -------> O(N)
+                System.out.print(tempNode.value);
+                if (i != size - 1){
+                    System.out.print(" <- ");
+                }
+                tempNode = tempNode.prev;
+            }
+        } else {
+            System.out.println("CDLL doesn't exist");
+        }
+        /**
+         * Time-Complexity: O(N)
+         * Space-Complexity: O(1)
+         */
+    }
 }
