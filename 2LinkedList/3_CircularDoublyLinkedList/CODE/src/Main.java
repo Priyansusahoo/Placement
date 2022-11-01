@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        CircularDoublyLinkedList cdll = new CircularDoublyLinkedList();
+        cdll.createCDLL(1);
+        System.out.println(cdll.head.value);
     }
 }

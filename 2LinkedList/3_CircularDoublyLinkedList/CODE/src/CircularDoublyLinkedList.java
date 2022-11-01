@@ -4,7 +4,7 @@ public class CircularDoublyLinkedList {
     public int size;
 
     //create1stNode
-    public DoublyNode createCDLL(int nodeValue){
+    public DoublyNode createCDLL(int nodeValue){ // O(1)
         head = new DoublyNode();
         DoublyNode newNode = new DoublyNode();
         newNode.value = nodeValue;
@@ -14,5 +14,9 @@ public class CircularDoublyLinkedList {
         newNode.next = newNode;
         size = 1;
         return head;
+        /**
+         * Time-Complexity: O(1)
+         * Space-Complexity: O(1)
+         */
     }
 }
