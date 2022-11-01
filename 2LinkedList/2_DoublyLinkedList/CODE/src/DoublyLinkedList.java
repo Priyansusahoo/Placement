@@ -116,12 +116,53 @@ public class DoublyLinkedList {
                 }
                 tempNode = tempNode.next;
             }
+            System.out.println();
         }
-        System.out.println("Node with value "+ nodeValue +" not found");
+        System.out.println("Node with value "+ nodeValue +" not found\n");
         return false;
         /**
          * Time-Complexity: O(N)
          * Space-Complexity: O(1)
          */
+    }
+    /**
+     * deleteNode
+     */
+    public void deleteNode(int location){
+        if (head == null){ // check if DLL exist or not
+            System.out.println("DLL doesn't exist");
+            return;
+        } else if (location == 0) { // at first
+            if (size == 1){ // case-1 if DLL consist of one node
+                head = null;
+                tail = null;
+                size --;
+                return;
+            } else { // case-2 if DLL consist of multiple node
+                head = head.next;
+                head.prev = null;
+                size --;
+            }
+        } else if (location >= 0) { // at last
+            DoublyNode tempNode = tail.prev;
+            if (size == 1){ // case-1 if DLL consist of one node
+                head = null;
+                tail = null;
+                size --;
+                return;
+            } else { // case-2 if DLL consist of multiple nodes
+                tempNode.next = null;
+                tail = tempNode;
+                size --;
+            }
+        } else { // at mentioned location
+            DoublyNode tempNode = head;
+            for (int i = 0; i < location - 1; i++) { // loop to find "location - 1"
+                tempNode = tempNode.next;
+            }
+            tempNode.next = tempNode.next.next;
+            tempNode.next.prev = tempNode;
+            size --;
+        }
     }
 }

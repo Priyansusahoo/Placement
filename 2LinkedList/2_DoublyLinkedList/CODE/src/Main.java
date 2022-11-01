@@ -5,17 +5,18 @@ public class Main {
         dll.insertDLL(1,0);
         dll.insertDLL(2,1);
         dll.insertDLL(3,8);
-//        System.out.println(dll.head.value); // 1
-//        System.out.println(dll.head.next.value); // 2
-//        System.out.println(dll.head.next.next.next.value);
-//        System.out.println(dll.tail.value); // 3
-//        System.out.println(dll.head.value);
-        System.out.println("traverse");
+
+        System.out.println("Traverse DLL:");
         dll.traverse();
-        System.out.println("reverseTraverse");
+        System.out.println("ReverseTraverse DLL:");
         dll.reverseTraverse();
-        System.out.println("searching Node");
+        System.out.println("Searching Node in DLL:");
         dll.searchNode(3);
         dll.searchNode(9);
+        System.out.println("traverse before deleting node:");
+        dll.traverse();
+        dll.deleteNode(2);
+        System.out.println("traverse after deleting node:");
+        dll.traverse();
     }
 }
