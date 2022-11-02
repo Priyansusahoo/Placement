@@ -62,7 +62,6 @@ public class CircularDoublyLinkedList {
      * traverse
      */
     public void traverse(){
-        System.out.println();
         if(head != null){
             DoublyNode tempNode = head;
             for (int i = 0; i < size; i++) { // -------> O(N)
@@ -97,6 +96,7 @@ public class CircularDoublyLinkedList {
         } else {
             System.out.println("CDLL doesn't exist");
         }
+        System.out.println();
         /**
          * Time-Complexity: O(N)
          * Space-Complexity: O(1)
@@ -166,6 +166,23 @@ public class CircularDoublyLinkedList {
             tempNode.next.prev = tempNode;
             size --;
         }
+        /**
+         * Time-Complexity: O(N)
+         * Space-Complexity: O(1)
+         */
+    }
+    /**
+     * deleteCDLL
+     */
+    public void deleteCDLL(){
+        DoublyNode tempNode = head;
+        for (int i = 0; i < size; i++) { // O(N)
+            tempNode.prev = null;
+            tempNode = tempNode.next;
+        }
+        head = null;
+        tail = null;
+        System.out.println("Successfully deleted");
         /**
          * Time-Complexity: O(N)
          * Space-Complexity: O(1)

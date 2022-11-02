@@ -13,8 +13,13 @@ public class Main {
         System.out.println("search node:");
         cdll.searchNode(3); // exist
         cdll.searchNode(9);
-        System.out.println("delete Node:");
+        System.out.println("delete Node method called");
         cdll.deleteNode(2);
+        System.out.println("traverse:");
+        cdll.traverse();
+        System.out.println("delete CDLL method called");
+        cdll.deleteCDLL();
+        System.out.println("traverse CDLL:");
         cdll.traverse();
 
     }
