@@ -1,0 +1,5 @@
+/**
+ * Question
+ */
+public class Question {
+}
