@@ -3,10 +3,8 @@ public class LinkedList {
     public Node tail;
     public int size;
 
-    /**
-     * create
-     */
-    public void createLL(int nodeValue) {
+    // creation
+    public void createNode(int nodeValue) {
         Node newNode = new Node();
         newNode.value = nodeValue;
         newNode.next = null;
@@ -14,9 +12,8 @@ public class LinkedList {
         tail = newNode;
         size = 1;
     }
-    /**
-     * insertNode
-     */
+
+    // insertNode
     public void insertNode(int nodeValue) {
         Node newNode = new Node();
         newNode.value = nodeValue;
@@ -25,17 +22,17 @@ public class LinkedList {
         tail = newNode;
         size++;
     }
-    /**
-     * traverse
-     */
-    public void traversalLL() {
+
+    // traverse
+    public void traverseLL() {
         Node tempNode = head;
-        for (int i =0; i<size; i++) {
+        for (int i = 0; i < size; i++) {
             System.out.print(tempNode.value);
-            if (i != size -1) {
+            if (i != size - 1) {
                 System.out.print(" -> ");
             }
             tempNode = tempNode.next;
         }
+        System.out.println();
     }
 }
